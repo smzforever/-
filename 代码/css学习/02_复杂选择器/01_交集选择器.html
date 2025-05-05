@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <head lang = "zh-CN">
+        <meta charset = "UTF-8">
+        <title>01_交集选择器</title>
+        <style>
+            .student {
+                coloer : blue;
+            }
+            p {
+                color :green;
+            }
+            /* "p.student是且的含义，即指代既有又有才会选择（交集选择器不会包含id选择器）" */
+            p.student {
+                color :pink;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>学生和学生物品</h1>
+        <br>
+        <p class="student">张三 笔记本</p>
+        <p class="student">李四 笔记本</p>
+        <p>王五 </p>
+        
+    </body>
+</html>

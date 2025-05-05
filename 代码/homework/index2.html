@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Display</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <button @click="startTimer">开始显示时间</button>
+        <button @click="stopTimer">停止显示时间</button>
+        
+        <h3>使用方法显示：</h3>
+        <p>{{ formatTime() }}</p>
+        
+        <h3>使用过滤器显示：</h3>
+        <p>{{ currentTime | timeFormat }}</p>
+    </div>
+
+    <script>
+        Vue.filter('timeFormat', function(value) {
+            return dayjs(value).format('YYYY年MM月DD日 HH:mm:ss.SSS');
+        });
+
+        new Vue({
+            el: '#app',
+            data: {
+                timer: null,
+                currentTime: new Date()
+            },
+            methods: {
+                startTimer() {
+                    if (!this.timer) {
+                        this.timer = setInterval(() => {
+                            this.currentTime = new Date();
+                        }, 1000);
+                    }
+                },
+                stopTimer() {
+                    if (this.timer) {
+                        clearInterval(this.timer);
+                        this.timer = null;
+                    }
+                },
+                formatTime() {
+                    return dayjs(this.currentTime).format('YYYY年MM月DD日 HH:mm:ss.SSS');
+                }
+            },
+            beforeDestroy() {
+                this.stopTimer();
+            }
+        });
+    </script>
+</body>
+</html></div>

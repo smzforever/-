@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <head lang = "zh-CN">
+        <meta charset = "UTF-8">
+        <title>伪类选择器</title>
+    </head>
+    <style>
+        /* link是没有访问过的元素 */
+        a:link{
+            color:red
+        }
+        /* visited是访问过的元素 */
+        a:visited{
+            color:grey
+        }
+        /* hover:鼠标悬浮变色 */
+        a:hover{
+            color:blue
+        }
+        /* active:激活状态，按下不松手 */
+        a:active{
+            color:green
+        }
+        /* link visited超链接独有状态，hover和active所有元素具有的状态 */
+        input:focus{
+            color:black;
+            background-color: red;
+        }
+        /* focus:点中的表单才有效果 */
+    </style>
+    <body>
+        <!-- 伪类即为很像类但不是类，是元素特殊状态的一种描述 -->
+         <a href="https:www.baidu.com">去百度搜索</a>
+         <a href="https:www.jd.com">去京东</a>
+         <br>
+         <input type="text">
+         <br>
+         <input type="text">
+         <br>
+         <input type="text">
+         
+    </body>
+</html>
