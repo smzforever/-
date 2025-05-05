@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <head lang = "zh-CN">
+        <meta charset = "UTF-8">
+        <title>表单组件</title>
+    </head>
+    <body>
+        <form action="https://search.jg.com/search">
+            账户：<input type="text" name="account" value="zhangsan" maxlenth="10"> <br>
+            密码：<input type="password" name="pwd" value="123" maxlength="6"> <br>
+            性别：
+            <input type="radio" name="gender" value="male" checked>男
+            <input type="radio" name="gender" value="female">女<br>
+            爱好：
+                 <input type="checkbox" name="hobby" value="smoke" checked>抽烟
+                 <input type="checkbox" name="hobby" value="drink" checked>喝酒
+                 <input type="checkbox" name="hobby" value="perm"  checked>烫头<br>  
+            其它：
+                <textarea name="other" cols="23" rows="3"> </textarea> <br> 
+                 <input type="hidden" name="tag" value="123">
+                 <!-- 隐藏域 -->
+        <br>
+        <button>确认</button>
+        <butt0n type="reset">重置</butt0n>
+        <button type="button">检测账户是否注册</button>
+        <!-- type="button",普通按钮 -->
+        <!-- <input type="submit" value="确认"> 确认的第二种写法，不能写name -->
+        <!-- 单选框和复写框必须写value和name  -->
+       
+    </body>
+</html>

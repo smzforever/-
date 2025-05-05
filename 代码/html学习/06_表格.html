@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <head lang = "zh-CN">
+        <meta charset = "UTF-8">
+        <title>表格结构</title>
+    </head>
+    <body>
+        <table border="1" cellspacing="0" width="500" height="500">
+            <!-- cellspacing：边框之间距离，并没有合并边框。height:只调节主体高度,高度至少为500 -->
+            <caption>学生信息</caption>
+            <thead height="50" align="center" vallign="middle">
+                <!-- align：水平对齐方式 valign：垂直对齐方式-->
+                <tr>
+                    <th>姓名</th>
+                    <th>姓别</th>
+                    <th>年龄</th>
+                    <th>民族</th>
+                    <th>政治面貌</th>
+                </tr>
+            </thead>
+            <tbody height="50" align="center" vallign="middle">
+                <tr>
+                    <td>张三</td>
+                    <td>男</td>
+                    <td>18</td>
+                    <td>汉族</td>
+                    <td>团员</td>
+                </tr>
+                <tr>
+                    <td>李四</td>
+                    <td>女</td>
+                    <td>20</td>
+                    <td>满族</td>
+                    <td>群众</td>
+                </tr>  
+                <tr>
+                    <td>王五</td>
+                    <td>男</td>
+                    <td>19</td>
+                    <td>回族</td>
+                    <td>党员</td>
+                </tr>  
+                <tr>
+                    <td>赵六</td>
+                    <td>女</td>
+                    <td>21</td>
+                    <td>壮族</td>
+                    <td>党员</td>
+                </tr>  
+            </tbody>
+            <!-- 给th或td设置好width或height后，整行都会被修改 -->
+            <tfoot height="50" align="center" vallign="middle">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>共计：4人</td>
+            </tfoot>
+            
+    </body>
+</html>

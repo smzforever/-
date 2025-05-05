@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>登录QQ邮箱</title>
+    <link  rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3px 4px;
+            color: #0c8ae4;
+            background-color: #b2daf1;
+         }
+         .header img{
+            width: 100px;
+            height:auto;
+        }
+        .toptitle{
+            line-height: 1;
+            font-size: 35px;
+            text-align: left;
+
+        }
+        .header-right{
+            display: flex;
+        }
+        .header-right a{
+            margin-left: 10px;
+            text-decoration: none;
+        }
+        .header-right img{
+            height: 20px;
+        }
+        .content{
+            display: flex;
+            padding: 20px;
+        }
+        .left{
+            flex: 1;
+            text-align: center;
+            padding-right: 20px;
+        }
+        .title{
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #3498db;
+        }
+        .expression{
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .left img{
+            width: 200px;
+            height: auto;
+        }
+        .right{
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 20px;
+            width: 350px;
+            border: solid;
+            border-color: rgb(226, 226, 226);
+            border-radius: 5px;
+            margin-right: 300px;
+            margin-bottom:50px;
+            margin-top: 60px;
+          
+        }
+        .loginbox_tab{
+       justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .login  a{
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #eee;
+            border-radius: 5px 5px 0 0;
+            color: #333;
+        }
+        .loginbox_tab a.qq{
+            background-color: white;
+            border-bottom: 1px soild white;
+        }
+        .login_form{
+            display: flex;
+            flex-direction: column;
+
+        }
+        input{
+            margin-top: 10px;
+            height: 35px;
+        }
+        .login_form button{
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .link_group{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        .link_group a{
+            text-decoration: none;
+            font-size: 12px;
+            color: #666;
+        }
+  
+        .agreement{
+            color: #3498db;
+            text-decoration: none;
+        }
+        .checkbox{
+            height: auto;
+            margin: 0 5px 0 0;
+            vertical-align: middle;
+        }
+        .auto-login{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .footer{
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            font-size: 12px;
+        }
+        .footer a{
+            /* 后代选择器，选中footer类中的所有<a>标签 */
+            color: #333;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./QQ邮箱.png" alt="QQ邮箱">
+            <p class="toptitle">QQ邮箱</p>
+            <div class="header-right">
+                <a href="xxx">基本版</a>
+                <a href="xxx">English</a>
+                <a href="xxx">手机版</a>
+                <a href="xxx">企业邮箱</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left">   
+                <p class="title">QQ邮箱,常联系</p>
+                <p class="expression">
+                    1982年,第一张电脑笑脸诞生<br>
+                    今天，人们已经习惯用它来表达心情<br>
+                    现在，你也可以在邮件里表达微笑
+                </p>
+                <img src="./t011a32c38ef070cbb4.png">
+            </div>
+            <div class="right">
+                <div class="loginbox_tab">
+                    <a href="#" class="tab_wx">微信登陆</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <a href="#" class="tab_qq">QQ登陆</a>
+                </div><hr>
+                <form class="login_form"><br>
+                    <input type="text" placeholder="支持QQ号/邮箱/手机号登录">
+                    <input type="password" placeholder="请输入密码"><br>
+                    <button type="submit">授权登陆</button><br>
+                    <div class="link_group">
+                        <a href="xxx">找回密码</a>
+                        <a href="xxx">注册账户</a>
+                        <a href="xxx">意见反馈</a>
+                    </div><hr>
+                    <br>
+                    <p class="agreement">授权及同意<a href="xxx">服务协议</a>和<a href="xxx">QQ隐私保护指引</a></p><br>
+                    <!--<p><input type="checkbox">下次自动登录<br></p >-->
+                    <label class="auto-login"><input type="checkbox" class="checkbox">下次自动登录</label>
+                </form>
+        </div>
+    </div>
+    <div class="footer" id="footer_id" >
+        <a href="xxxx">服务条款</a>
+        <a href="xxxx">隐私政策</a>
+        <a href="xxxx">帮助中心</a>
+        <a href="xxxx">账号与安全</a>
+        <a href="xxxx">关于腾讯</a>
+    </div> 
+   
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+    <head lang = "zh-CN">
+        <meta charset = "UTF-8">
+        <title>登录QQ邮箱</title>
+        <style>
+        *{
+            marign:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .header{
+            background-color: #f9f9f9;
+            height: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .header-right{
+            display: flex;
+            align-items: center;
+        }
+        .header-right a{
+            margin-left: 20px;
+            text-decoration: none;
+            color: #3498db;
+            font-size: 14px;
+            width:auto
+        }
+        .logo{
+            width: 100px;
+            height: auto;
+        }           
+       
+        .content{
+            display:flex;
+
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: white;}
+            .left{
+                text-align:center;
+                background-color: white;
+                padding: 20px;
+                 
+            }
+            .top-title{
+                font-size: 35px;
+                color: #3498db;
+                margin-bottom: 20px;
+            }
+            .text-expression{
+                font-size: 20px;
+                color: #666;
+                margin-bottom: 20px;
+            }
+            .picture{
+                width: 400px;
+                height: auto;
+                margin-left: 20px;
+            }
+        .right{
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 20px;
+            width: 400px;
+            border: solid;
+            border-color: rgb(226, 226, 226);
+            border-radius: 5px;
+            margin-left: 300px; /* Changed from margin-right to margin-left */
+            margin-bottom: 50px;
+            margin-top: 60px;
+            
+        }
+        .loginbox_form{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
+        .loginbox_form a{
+            text-decoration: none;
+            color: #3498db;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .loginbox_form input[type="text"],
+        .loginbox_form input[type="password"]{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .loginbox_tab{
+            display: flex; 
+            
+            gap: 150px; 
+            margin-bottom: 20px;
+        }
+
+        .button_form{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .button_form a{
+            text-decoration: none;
+            color: #3498db;
+            margin-top: 20px;
+        }
+        .agreement{
+            font-size: 12px;
+            color: #666;
+            margin-top: 20px;
+        }
+        .auto-login{
+            font-size: 12px;
+            color: #666;
+            margin-top: 20px;
+        }
+        .auto-login input[type="checkbox"]{
+            margin-right: 5px;
+        }
+        .footer{
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            margin-top: 20px;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .footer p {
+            margin: 0 10px;
+        }
+        .footer a {
+            text-decoration: none;
+            color: #3498db;
+            margin-left: 5px;
+        }
+
+        /* 增加间距 */
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <div class="header">
+            <img src="Snipaste_2025-04-24_20-21-57.png" alt="QQ邮箱" class="logo">
+            <div class="header-right">
+                <a href="xxx">基本版</a><br>
+                <a href="xxx">English</a><br>
+                <a href="xxx">企业邮箱</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left">
+                <p class="top-title">QQ邮箱，常联系！</p>
+                <p class="text-expression">
+                        1987年9月14日21时07分<br>
+                        中国第一封电子邮件<br>
+                        从北京发往德国<br>
+                        "越过长城，走向世界"<br>
+                </p>
+            </div>
+            <img src="picture.png" class="picture">
+            <div class="right">
+                <form class="loginbox_form">
+                    <div class="loginbox_tab">
+                        <a href="xxxx" class="wx_tab">微信登陆</a>
+                        <a href="xxxx" class="qq_tab">QQ登陆</a>
+                    </div>
+                    <input type="text" placeholder="支持QQ号/邮箱/手机号登陆">
+                    <input type="password" placeholder="请输入密码"><br>
+                    <button type="submit" style="
+                        width: 100%;
+                        padding: 10px;
+                        background-color: #3498db;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-size: 16px;
+                        transition: background-color 0.3s;
+                    ">授权登录</button><br>
+                    <div class="button_form">
+                        <a href="xxxx">找回密码</a>
+                        <a href="xxxx">注册账号</a>
+                        <a href="xxxx">意见反馈</a>
+                    </div><br>
+                    <br>
+                    <p class="agreement"><a href="https://rule.tencent.com/rule/46a15f24-e42c-4cb6-a308-2347139b1201">授权及同意服务协议</a>和<a href="https://rule.tencent.com/rule/preview/3fd52bde-6555-453b-9ab8-c5f1f3d22c62">QQ隐私保护指引</a></p>
+                    <br>
+                    <label class="auto-login"><input type="checkbox" class="again">下次自动登录</label> 
+                </form>
+            </div>
+            <div class="footer">
+                <p>© 1998-2025 Tencent. All Rights Reserved</p>
+                <p>腾讯公司 版权所有</p>
+                <p>粤B2-20090059-1</p>
+                <p>粤公网安备 44010602002273号</p>
+                <p>腾讯公司 版权所有</p>
+            </div>
+        </div>
+
+    </div>
+    </body>
+</html>
